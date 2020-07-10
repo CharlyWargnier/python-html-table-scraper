@@ -23,6 +23,9 @@ The app is simple to use:
 ![Here's a quick video](resources\htmlScraperLast.gif)
 
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=k0F5O1oA4BU)
+
+
 
 
 

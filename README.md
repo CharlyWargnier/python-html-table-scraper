@@ -1,9 +1,7 @@
 A simple [Streamlit](https://streamlit.io) app that can be deployed to [Heroku](https://heroku.com).
 
 
-Streamlit's wizardry go far beyond Machine Learning.
-
-To illustrate that, I coded a simple HTML table scraper in ~100 lines of Python.
+Streamlit's wizardry go far beyond Machine Learning! To illustrate that, I coded a simple HTML table scraper in ~100 lines of Python 🐍.
 
 You can check what the apps does in this video:
 

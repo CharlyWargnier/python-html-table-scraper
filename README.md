@@ -1,18 +1,11 @@
 A simple [Streamlit](https://streamlit.io) app that can be deployed to [Heroku](https://heroku.com).
 
+
 Streamlit's wizardry go far beyond Machine Learning.
 
-To illustrate that, I coded a simple HTML table scraper in less than 100 lines of Python.
+To illustrate that, I coded a simple HTML table scraper in ~100 lines of Python.
 
-:thumbsup:
-
-:heart_eyes:
-
-
-If you wanted to try the app for yourself, it's here:
-
-https://html-table-scraper.herokuapp.com/
-
+[![IMAGE ALT TEXT HERE](resources\VideoImage.png "ddd" )](https://www.youtube.com/watch?v=xPJkepA_RrY)
 
 The app is simple to use:
 
@@ -20,12 +13,14 @@ The app is simple to use:
 - Select a table
 - Export it to csv
 
-![Here's a quick video](resources\htmlScraperLast.gif)
+If you wanted to try the app for yourself, it's here ➡️ https://html-table-scraper.herokuapp.com/
+
+You can also follow me on Twitter ➡️ https://twitter.com/DataChaz
+
+You can also follow me on [Twitter](https://twitter.com/DataChaz) ➡️  
 
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=k0F5O1oA4BU)
+Or even Buy me a coffee to support my work! 😊 ➡️ https://www.buymeacoffee.com/cwar05
 
-
-
-
+Find out more about Streamlit ➡️ https://www.streamlit.io/
 

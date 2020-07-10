@@ -6,11 +6,6 @@ import requests
 import base64
 
 
-#from helpers import load_data
-
-
-#region Size of layout  ############################################################
-
 def _max_width_():
     max_width_str = f"max-width: 1100px;"
     st.markdown(
@@ -26,7 +21,6 @@ def _max_width_():
 
 _max_width_()
 
-#endregion
 
 st.title("🌐 HTML Table Scraper 🕸️")
 st.markdown(" A simple HTML table scraper made in Python 🐍 & the amazing [Streamlit!](https://www.streamlit.io/) ")
@@ -105,18 +99,12 @@ try:
         else:
             st.error ('⚠️ - URL needs to be in a valid format, starting with *https://* or *http://*')
             
-
-
     else:
         
         st.warning ('ℹ️ - Paste a URL in the field above')
     
-    
 except ValueError:
     st.info ("ℹ️ - No table(s) to scrape on this page! 😊")
-
-
-###################################################################################################
 
 try:
     
@@ -126,10 +114,8 @@ try:
     href = f'<a href="data:file/csv;base64,{b64}" download="filtered_table.csv">** Click here to get your prize! 🎉**</a>'
     st.markdown(href, unsafe_allow_html=True)
 
-
 except NameError:
     print ('wait')
-
 
 st.markdown("---")
 

@@ -5,6 +5,8 @@ Streamlit's wizardry go far beyond Machine Learning.
 
 To illustrate that, I coded a simple HTML table scraper in ~100 lines of Python.
 
+You can check what the apps does in this video:
+
 [![IMAGE ALT TEXT HERE](resources/VideoImage.png "" )](https://www.youtube.com/watch?v=xPJkepA_RrY)
 
 The app is simple to use:
@@ -13,14 +15,8 @@ The app is simple to use:
 - Select a table
 - Export it to csv
 
-If you wanted to try the app for yourself, it's here ➡️ https://html-table-scraper.herokuapp.com/
+If you wanted to try the app for yourself, it's currently deployed on Heroku [here](https://html-table-scraper.herokuapp.com/)
 
-You can also follow me on Twitter ➡️ https://twitter.com/DataChaz
+You can [buy me a coffee](https://www.buymeacoffee.com/cwar05) ☕ to support my work and cover the hosting costs! 😊 
 
-You can also follow me on [Twitter](https://twitter.com/DataChaz) ➡️  
-
-
-Or even Buy me a coffee to support my work! 😊 ➡️ https://www.buymeacoffee.com/cwar05
-
-Find out more about Streamlit ➡️ https://www.streamlit.io/
-
+You can also follow me on [Twitter](https://twitter.com/DataChaz) where I share Python & Data Science tips - See you there! 🙌

@@ -5,7 +5,7 @@ Streamlit's wizardry go far beyond Machine Learning.
 
 To illustrate that, I coded a simple HTML table scraper in ~100 lines of Python.
 
-[![IMAGE ALT TEXT HERE](resources\VideoImage.png "ddd" )](https://www.youtube.com/watch?v=xPJkepA_RrY)
+[![IMAGE ALT TEXT HERE](resources/VideoImage.png "" )](https://www.youtube.com/watch?v=xPJkepA_RrY)
 
 The app is simple to use:
 

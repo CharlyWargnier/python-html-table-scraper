@@ -1,33 +1,26 @@
 A simple [Streamlit](https://streamlit.io) app that can be deployed to [Heroku](https://heroku.com).
 
-Streamlit's wizardry go far beyond #ML! Magic wand
+Streamlit's wizardry go far beyond Machine Learning.
 
-To illustrate that, I coded a simple HTML table scraper in less than 100 lines of Python SnakeFire!
-
-
-    https://gist.github.com/roachhd/1f029bd4b50b8a524f3c
+To illustrate that, I coded a simple HTML table scraper in less than 100 lines of Python.
 
 :thumbsup:
 
 :heart_eyes:
 
 
-⧩ Paste any Webpage
-⧩ Select a table
-⧩ Export it to csv
+If you wanted to try the app for yourself, it's here:
 
-#SEOs & Al., y'all be able to play with it later this week (free + code)! Raising hands
-
-https://twitter.com/DataChaz/status/1280577840682094593
+https://html-table-scraper.herokuapp.com/
 
 
-![Farmers Market Finder Demo](demo/demo.gif)
+The app is simple to use:
 
-![Farmers Market Finder Demo](resources\test.gif)
+- Paste any Webpage
+- Select a table
+- Export it to csv
 
-![Farmers Market Finder Demo](resources\htmlScraperLast.mp4)
-
-![Farmers Market Finder Demo](resources\htmlScraperLast.gif)
+![Here's a quick video](resources\htmlScraperLast.gif)
 
 
 

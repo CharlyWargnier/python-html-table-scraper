@@ -1,10 +1,13 @@
-
+# =============================================================================
 import streamlit as st
 import pandas as pd
 import numpy as np
 import requests
 import base64
 
+import hts_procedures as hts
+
+# =============================================================================
 
 def _max_width_():
     max_width_str = f"max-width: 1100px;"
@@ -19,8 +22,16 @@ def _max_width_():
         unsafe_allow_html=True, 
     )
 
+def createList(r1, r2):
+    return [item for item in range(r1, r2+1)]
+
+# =============================================================================
+# INIT
+scraper = hts.HTS()
 _max_width_()
 
+# =============================================================================
+# App definition
 
 st.title("🌐 HTML Table Scraper 🕸️")
 st.markdown(" A simple HTML table scraper made in Python 🐍 & the amazing [Streamlit!](https://www.streamlit.io/) ")
@@ -28,46 +39,26 @@ st.markdown(" A simple HTML table scraper made in Python 🐍 & the amazing [Str
 st.markdown('### **1️⃣ Enter a URL to scrape **')
 
 try:
-
     url =  st.text_input("", value='https://stackexchange.com/leagues/1/alltime/stackoverflow', max_chars=None, key=None, type='default')
 
     if url:
-        
         arr = ['https://', 'http://']
         if any(c in url for c in arr):
 
+            scraper.url = url
 
-    #    if "https" in url:
+            #@st.cache(persist=True, show_spinner=False)
+            scraper.load()
 
-            header = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
-            "X-Requested-With": "XMLHttpRequest"
-            }
-
-            @st.cache(persist=True, show_spinner=False)
-            def load_data():
-                r = requests.get(url, headers=header)
-                return pd.read_html(r.text)
-
-            df = load_data()
-
-            length = len(df)
-            
-            if length == 1:
+            if scraper.table_count == 1:
                 st.write("This webpage contains 1 table" )
-            else: st.write("This webpage contains " + str(length) + " tables" )
-
-            
-            #st.write("This webpage contains " + str(length) + " tables" )
+            else: st.write("This webpage contains %s tables" % scraper.table_count)
 
             if st.button("Show scraped tables"):
-                st.table(df)
+                st.table(scraper.data)
             else: st.empty()
 
-            def createList(r1, r2): 
-                return [item for item in range(r1, r2+1)] 
-                
-            r1, r2 = 1, length
+            r1, r2 = 1, scraper.table_count
             funct = createList(r1, r2)
 
             ###### Selectbox - Selectbox - Selectbox - Selectbox - Selectbox - Selectbox - Selectbox - 
@@ -77,17 +68,11 @@ try:
             ValueSelected = st.selectbox('', funct)
             st.write('You selected table #', ValueSelected)
 
-
-            df1 = df[ValueSelected -1]
-
+            df1 = scraper.get_table_content(ValueSelected)
 
             if df1.empty:
-
                 st.warning ('ℹ️ - This DataFrame is empty!')
-
-            
             else:
-                
                 #df1.index = df1.index.map(str)
                 df1 = df1.replace(np.nan, 'empty cell', regex=True)
                 #df1 = df1.replace('vte','')

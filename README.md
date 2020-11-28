@@ -1,3 +1,5 @@
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/charlywargnier/python-html-table-scraper/app.py)
+
 A simple [Streamlit](https://streamlit.io) app that can be deployed to [Heroku](https://heroku.com).
 
 
